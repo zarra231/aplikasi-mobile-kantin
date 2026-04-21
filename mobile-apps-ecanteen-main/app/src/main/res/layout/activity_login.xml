@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdf8f2"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Image Header -->
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/logo" />
+
+        <!-- Welcome Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lg_title"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginTop="20dp"
+            android:textColor="#468f41"
+            android:fontFamily="@font/bakso_sapi"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lg_isi"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Buyer & Seller Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_switch2"
+            android:padding="4dp">
+
+            <Button
+                android:id="@+id/btn_pembeli"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Pembeli"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@drawable/selector_button_registrasi"
+                android:backgroundTint="@null"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/btn_penjual"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Penjual"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@drawable/selector_button_registrasi"
+                android:backgroundTint="@null"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+        <!-- Student ID -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/lg_email" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Masukkan Email"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_input"
+            android:padding="15dp"
+            android:inputType="textEmailAddress" />
+
+        <!-- Password -->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/lg_password" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Masukkan Password"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_input"
+            android:padding="15dp"
+            android:inputType="textPassword" />
+
+        <!-- Forgot Password -->
+
+        <!-- Login Button -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:text="@string/lg_lupa_pw"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="#666666" />
+
+        <Button
+            android:id="@+id/btn_masuk"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Masuk"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_login"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <!-- OR -->
+        <TextView
+            android:id="@+id/tv_daftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lg_regis"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#468f41"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+    </LinearLayout>
+
+</ScrollView>

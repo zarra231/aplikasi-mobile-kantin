@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">KeKantin</string>
+    <!-- Konten form Regist -->
+    <string name="lg_title2">Registrasi</string>
+    <string name="lg_email2">Email</string>
+    <string name="lg_nama_toko">Nama Toko</string>
+    <string name="lg_no_handphone2">No Handpone</string>
+    <string name="lg_password2">Password</string>
+    <string name="lg_confirm_password2">Confirm Password</string>
+    <string name="lg_regis2">Sudah Punya Akun? Masuk Sekarang</string>
+
+    <!-- Konten form login -->
+    <string name="lg_title">Selamat Datang</string>
+    <string name="lg_isi">Silahkan login ke akun Anda</string>
+    <string name="lg_email">Email</string>
+    <string name="lg_password">Password</string>
+    <string name="lg_lupa_pw">Lupa Password?</string>
+    <string name="lg_regis">Belum punya akun? Daftar Sekarang</string>
+
+    <!-- Keranjang -->
+    <string name="title_cart">Keranjang Belanja</string>
+    <string name="warung_makmur">Warung Mak Mur</string>
+    <string name="nasi_goreng">Nasi Goreng Spesial</string>
+    <string name="price_25000">Rp 25.000</string>
+    <string name="warung_rismacan">Warung RismaCan</string>
+    <string name="es_teh">Es Teh</string>
+    <string name="price_3000">Rp 3.000</string>
+    <string name="total">Total</string>
+    <string name="total_price">Rp 56.000</string>
+    <string name="checkout">Checkout</string>
+
+
+    <!-- Profil -->
+    <string name="profil_title">Profil</string>
+    <string name="profil_nama">Alex Rivera</string>
+    <string name="profil_email">alexrivera@gmail.com</string>
+    <string name="profil_telp">089987465432</string>
+    <string name="profil_pa">PENGATURAN AKUN</string>
+    <string name="profil_edt_profil">Edit Profil</string>
+    <string name="profil_tentang_apk">Tentang Aplikasi</string>
+    <string name="profil_logout">Logout</string>
+
+    <!-- Edit Profil -->
+    <string name="edit_profile">Edit Profil</string>
+    <string name="edt_cancel">Cancel</string>
+    <string name="change_photo">Ubah Foto</string>
+    <string name="full_name">NAMA PANJANG</string>
+    <string name="edt_profil_name">Nama</string>
+    <string name="email">EMAIL</string>
+    <string name="edt_profil_email">Email</string>
+    <string name="phone">NOMOR TELEPON</string>
+    <string name="edt_profil_no_telp">Nomor Telepon</string>
+    <string name="save_changes">Simpan</string>
+
+    <!-- Tentang Aplikasi -->
+    <string name="about_app">Tentang Aplikasi</string>
+    <string name="app_name_custom">ke.kantin</string>
+    <string name="app_version">Versi 1.0.0</string>
+    <string name="short_description">Deskripsi Singkat</string>
+    <string name="app_description">
+        Aplikasi Kantin Digital UIKA merupakan aplikasi mobile yang menyediakan informasi kantin kampus serta layanan pre-order makanan bagi civitas akademika Universitas Ibn Khaldun Bogor. Melalui aplikasi ini, pengguna dapat melihat menu dan harga toko di kantin serta memesan makanan tanpa harus mengantre, sehingga pelayanan kantin menjadi lebih efisien dan modern.</string>
+    <string name="developer_title">Developer / Kampus</string>
+    <string name="developer_name">ZRRT Developer</string>
+    <string name="developer_campus">Universitas Ibn Khaldun Bogor</string>
+    <string name="copyright">Hak Cipta © 2026 • ke.kantin App</string>
+
+    <!-- Logout -->
+    <string name="logout_title">Konfirmasi Logout</string>
+    <string name="logout_desc">Kamu yakin ingin logout?</string>
+    <string name="logout">Keluar</string>
+    <string name="lg_cancel">Batal</string>
+
+
+</resources>

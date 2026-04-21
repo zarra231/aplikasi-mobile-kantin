@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/krem"
+    android:gravity="center_horizontal">
+
+    <!-- SPACER ATAS -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- ICON CEKLIS -->
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/ceklis"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PEMBAYARAN SELESAI"
+        android:textColor="@color/secondary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Bill -->
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lihatpesanan"
+        android:padding="12dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_qr_scan"
+            android:padding="16dp"
+            android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Metode Pembayaran" android:textColor="@color/white" android:fontFamily="@font/poppins_regular"/>
+                <TextView android:id="@+id/tvSelesaiMetode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:textColor="@color/white" android:textStyle="bold" android:fontFamily="@font/poppins_bold"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Total Pembayaran" android:textColor="@color/white" android:fontFamily="@font/poppins_regular"/>
+                <TextView android:id="@+id/tvSelesaiTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rp 0" android:textColor="@color/white" android:textStyle="bold" android:fontFamily="@font/poppins_bold"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Waktu Pengambilan" android:textColor="@color/white" android:fontFamily="@font/poppins_regular"/>
+                <TextView android:id="@+id/tvSelesaiWaktu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:textColor="@color/white" android:fontFamily="@font/poppins_regular"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="ID Pesanan" android:textColor="@color/white" android:fontFamily="@font/poppins_regular"/>
+                <TextView android:id="@+id/tvSelesaiId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#-" android:textColor="@color/white" android:fontFamily="@font/poppins_bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- BUTTON -->
+    <Button
+        android:id="@+id/btnLihatPesananSelesai"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:text="LIHAT PESANAN"
+        android:textColor="@color/white"
+        android:background="@drawable/lihatpesanan"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <Button
+        android:id="@+id/btnKembaliBeranda"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:text="KEMBALI KE BERANDA"
+        android:textColor="@color/secondary"
+        android:background="@drawable/pesanan"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <!-- SPACER BAWAH -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/krem"
+    tools:context=".KeranjangActivity">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:id="@+id/hdrKeranjang"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:elevation="4dp">
+        <ImageButton
+            android:id="@+id/imgKrjArrowLeft"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/lingkaran_putih"
+            android:src="@drawable/ic_arrow_back" />
+        <TextView
+            android:id="@+id/tvKeranjang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/title_cart"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_bold"/>
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+
+<!--    Content-->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="140dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_keranjang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_menu"
+                android:nestedScrollingEnabled="false" />
+                <TextView
+                    android:id="@+id/tv_empty_cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Keranjang kosong"
+                    android:gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:visibility="gone"
+                    android:fontFamily="@font/poppins_regular"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/white"
+        android:elevation="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/tvKrjTotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total Pembayaran"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#757575" />
+            <TextView
+                android:id="@+id/tvKrjHargaTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 0"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppins_bold"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnKrjCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Checkout Sekarang"
+            android:backgroundTint="@color/secondary"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

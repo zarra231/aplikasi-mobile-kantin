@@ -1,0 +1,67 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/krem"
+    android:gravity="center_horizontal">
+
+    <!-- Spacer atas -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- TEKS -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan QR Code untuk Melakukan Pembayaran"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/ijo"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- FRAME HIJAU -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lihatpesanan"
+        android:padding="14dp"
+        android:layout_gravity="center_horizontal">
+
+        <!-- GARIS PUTUS-PUTUS -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_qr_scan"
+            android:padding="12dp">
+
+            <!-- ISI PUTIH -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="12dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgQr"
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:src="@drawable/qr"
+                    android:scaleType="fitCenter"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Spacer bawah -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
